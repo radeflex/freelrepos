@@ -17,14 +17,14 @@ import WorkModel from "./models/WorkModel.js";
 
 const app = express();
 const port = process.env.PORT ||
-4444 ;
+4444;
 
 app.use("/images", express.static("images"));
 app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect("mongodb+srv://radeflex:kkkwwwW@cluster0.5iafcvu.mongodb.net/?retryWrites=true&w=majority")
   .then(() => console.log("DB ok"))
   .catch((err) => console.log("DB err: " + err));
 
