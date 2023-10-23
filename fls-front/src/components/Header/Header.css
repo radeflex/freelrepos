@@ -1,0 +1,15 @@
+.navbar-nav {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 500px) {
+  a {
+    font-size: 15px;
+}
+}
