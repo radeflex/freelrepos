@@ -176,10 +176,10 @@ const Orders = () => {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                flexWrap: "wrap-reverse",
-                width: "80%",
+                flexDirection: "column",
+                width: "95%",
                 maxHeight: "600px",
-                minHeight: "250px",
+                minHeight: "100px",
                 margin: "15px",
               }
             : {
@@ -188,13 +188,16 @@ const Orders = () => {
                 alignItems: "flex-start",
                 flexWrap: "wrap-reverse",
                 width: "90%",
-                height: "350px",
+                maxHeight: "550px",
+                minHeight: "200px",
                 margin: "15px",
+                padding: "20px"
               }
         }
       >
         <div
-          style={{ display: "flex", alignItems: "flex-start", height: "100%" }}
+          style={window.innerWidth <= 500
+            ?{ display: "flex", alignItems: "flex-start" } : { display: "flex", alignItems: "flex-start", height: "400px" }}
         >
           <img
             src={img}
@@ -212,7 +215,7 @@ const Orders = () => {
         <Card.Body
           style={
             window.innerWidth <= 500
-              ? { width: "80%" }
+              ? { width: "80%", display: "flex", flexDirection: "column", justifyContent: "center" }
               : {
                   display: "flex",
                   flexDirection: "column",
@@ -221,30 +224,27 @@ const Orders = () => {
                 }
           }
         >
-          <Card.Title>
-            <p
-              style={
+          <Card.Title style={
                 window.innerWidth <= 500
-                  ? { fontSize: "13px", width: "140px" }
+                  ? { fontSize: "15px", width: "100%", textAlign: "start" }
                   : {
                       fontSize: "25px",
                       fontWeight: "600",
-                      width: "700px",
+                      width: "90%",
                       textAlign: "start",
-                    }
-              }
-            >
+                      height: "100%"
+                    }}>
               {title}
-            </p>
           </Card.Title>
           <Card.Subtitle
             style={
               window.innerWidth <= 500
                 ? {
-                    width: "100px",
+                    width: "100%",
                     fontWeight: "600",
-                    fontSize: "15px",
+                    fontSize: "18px",
                     color: "green",
+                    textAlign: "start"
                   }
                 : { fontWeight: "700", fontSize: "22px", color: "green" }
             }
@@ -253,21 +253,17 @@ const Orders = () => {
             {price}
             {" ₽"}
           </Card.Subtitle>
-          <Card.Text>
-            <p
-              style={
+          <Card.Text style={
                 window.innerWidth <= 500
-                  ? { fontSize: "10px", width: "140px", textAlign: "start" }
+                  ? { fontSize: "10px", width: "100%", textAlign: "start" }
                   : {
-                      width: "700px",
+                      width: "90%",
                       fontSize: "14px",
                       color: "rgb(70, 70, 70)",
                       textAlign: "start",
                     }
-              }
-            >
+              }>
               {text}
-            </p>
           </Card.Text>
           {!isdeletable ? (
             <ButtInfo contlink={contlink} />
@@ -330,7 +326,7 @@ const Orders = () => {
               />
             );
           })}
-          {isLoading === "loaded" && data.length === 0 && <div style={{width: "20000px", margin: "30px"}}><h6>Здесь пока нет заказов.</h6></div>}
+          {isLoading === "loaded" && data.length === 0 && <div style={{width: "100%", margin: "30px", textAlign: "start"}}><h6>Здесь пока нет заказов.</h6></div>}
     </div>
   );
 };

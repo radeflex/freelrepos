@@ -45,8 +45,9 @@
   .profile-block {
     background-color: whitesmoke;
     display: flex;
-    height: 50%;
+    height: 70%;
     width: 90%;
+    justify-content: center;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -54,38 +55,42 @@
 
   .pd-info {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    height: 250px;
-    font-size: 10px;
+    height: 90%;
+    font-size: 13px;
     margin-left: 10px;
     margin-top: 20px
   }
 
   .pb-data {
     height: 100%;
-    width: 45%;
+    width: 75%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  img {
-    width: 75px;
-    height: 75px;
+  .cont-images img {
+    width: 40px;
+    height: 40px;
   }
   .user-bio {
     word-wrap: break-word;
     text-align: start;
+    font-size: 14px;
     max-width: 200px;
     max-height: 300px;
+    margin-bottom: 10px;
   }
   .pd-img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 50px;
+  }
+  .pd-img Button {
+    margin: 10px;
   }
 }

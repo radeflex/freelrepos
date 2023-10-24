@@ -16,8 +16,7 @@ import checkAuth from "./utils/checkAuth.js";
 import WorkModel from "./models/WorkModel.js";
 
 const app = express();
-const port = process.env.PORT ||
-4444;
+const port = 4444;
 
 app.use("/images", express.static("images"));
 app.use(cors());

@@ -11,4 +11,12 @@
     height: 50px;
     width: 50px;
   }
+  .cards-list {
+    width: 95%;
+    display: flex;
+    min-height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }

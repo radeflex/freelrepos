@@ -49,7 +49,6 @@ const Profile = () => {
                     justifyContent: "space-between",
                     alignItems: "center",
                     flexDirection: "column",
-                    height: "140px",
                   }
                 : {
                     display: "flex",
@@ -66,8 +65,8 @@ const Profile = () => {
                 border: "1px solid rgb(89, 92, 238)",
                 borderRadius: "10px",
               }}
-              height={175}
-              width={175}
+              height={window.innerWidth <= 500 ? 75 : 175}
+              width={window.innerWidth <= 500 ? 75 : 175}
               alt="avatarPic"
             />
             <Link to={"/edit/" + userData._id}>
@@ -93,15 +92,15 @@ const Profile = () => {
                 {userData.biography}
             </div>
             <Head text="Навыки" />{" "}
-            <p className="user-skills">{userData.skills}</p>
+            <p className="user-skills" style={{textAlign: "start", color: "blue"}}>{userData.skills}</p>
             <Head text="Контакты" />{" "}
-            <div
+            <div class="cont-images"
               style={{
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
                 height: "60px",
-                width: "40%",
+                width: "300px"
               }}
             >
               {userData.github.includes("https://github.com/") ? (

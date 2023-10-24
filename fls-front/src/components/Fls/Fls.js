@@ -87,15 +87,15 @@ const Fls = () => {
           window.innerWidth <= 500
             ? {
                 display: "flex",
-                justifyContent: "space-around",
-                alignItems: "flex-end",
-                flexWrap: "wrap-reverse",
-                width: "90%",
-                height: "400px",
+                justifyContent: "space-between",
+                alignItems: "center",
+                flexDirection: "column",
+                width: "100%",
+                minHeight: "500px",
                 margin: "10px",
                 fontSize: "13px",
                 padding: "20px",
-                maxHeight: "700px",
+                maxHeight: "800px",
               }
             : {
                 display: "flex",
@@ -113,8 +113,8 @@ const Fls = () => {
         >
           <img
             src={avatar.includes("http") ? avatar : noAva}
-            height={150}
-            width={150}
+            height={window.innerWidth <= 500 ? 100 : 125}
+            width={window.innerWidth <= 500 ? 100 : 125}
             alt="cardAvatar"
             style={{
               margin: "20px",
@@ -129,9 +129,13 @@ const Fls = () => {
             window.innerWidth <= 500
               ? {
                   fontSize: "13px",
-                  width: "60%",
+                  width: "90%",
                   padding: "20px",
                   maxHeight: "700px",
+                  display: "flex",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  alignItems: "center",
                 }
               : {
                   display: "flex",
@@ -154,31 +158,16 @@ const Fls = () => {
             </p>
           </Card.Title>
           <Card.Subtitle
-            style={{ fontSize: "18px", color: "blue" }}
+            style={{ fontSize: "15px", color: "blue", textAlign: "start" }}
             className="mb-2"
           >
             {skills}
           </Card.Subtitle>
-          {rating && (
-            <Card.Text>
-              <p
-                style={{
-                  width: "700px",
-                  fontSize: "20px",
-                  textAlign: "start",
-                  color: "gold",
-                }}
-              >
-                {rating}
-                {" ★"}
-              </p>
-            </Card.Text>
-          )}
           <Card.Text>
             <p
               style={
                 window.innerWidth <= 500
-                  ? { fontSize: "13px", width: "110px" }
+                  ? { fontSize: "13px", width: "100%", textAlign: "start" }
                   : {
                       width: "700px",
                       fontSize: "15px",
@@ -196,12 +185,10 @@ const Fls = () => {
               style={
                 window.innerWidth <= 500
                   ? {
-                      fontSize: "13px",
-                      minWidth: "140px",
-                      maxWidth: "200px",
+                      width: "100%",
                       display: "flex",
                       maxHeight: "100px",
-                      flexWrap: "no-wrap",
+                      justifyContent: "space-between",
                       minHeight: "70px",
                     }
                   : {
@@ -305,7 +292,7 @@ const Fls = () => {
             );
           })}
       {isLoading === "loaded" && data.length === 0 && (
-        <div style={{ width: "20000px", margin: "30px" }}>
+        <div style={{ width: "100%", margin: "30px", textAlign: "start" }}>
           <h6>Здесь пока нет исполнителей.</h6>
         </div>
       )}

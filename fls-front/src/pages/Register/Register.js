@@ -26,7 +26,16 @@ const Register = () => {
     },
   });
   const onSubmit = async (values) => {
-    dispatch(fetchRegister(values));
+    dispatch(fetchRegister(values))
+      .then((res) => res.payload)
+      .then((pl) => {
+        try {
+          window.localStorage.setItem("token", pl.token);
+          window.localStorage.setItem("user", JSON.stringify(pl));
+        } catch (err) {
+          console.log(err);
+        }
+      });
   };
   if (isLogged) {
     return <Navigate to="/" />;
