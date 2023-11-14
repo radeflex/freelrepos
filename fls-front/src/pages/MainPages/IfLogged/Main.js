@@ -1,10 +1,14 @@
-import { useSelector } from "react-redux";
+import Creator from "../../../components/creatorCard/creatorCard";
+import fatty from "../../../media/img/fatty.jpeg"
+import "./Main.css"
 
 const Main = () => {
-  const userInfo = useSelector((state) => state.auth.data);
   return (
-    <div>
-      <h1>Здравствуй, {userInfo.name}</h1>
+    <div class="Main">
+      <h1>О нас</h1>
+      <div className="creatorPage">
+        <Creator photo={fatty} name="Мразота с колледжа" age={20} bio="Люблю ебать Максиму и Никите мозги с сайтом."/>
+        </div>
     </div>
   );
 };

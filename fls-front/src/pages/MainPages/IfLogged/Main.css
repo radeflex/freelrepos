@@ -1,0 +1,15 @@
+.creatorPage
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+}
+
+.Main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
