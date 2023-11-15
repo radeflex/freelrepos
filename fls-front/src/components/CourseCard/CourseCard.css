@@ -1,0 +1,67 @@
+.courseCard
+{
+    height: 100%;
+    width: 380px;
+    background-color: rgb(74, 43, 26);
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 20px;
+    min-height: 300px;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-body
+{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+}
+
+.cc-img
+{
+    background: 0;
+    border: 0;
+    opacity: 0.9;
+    height: 60%;
+    width: 50%;
+}
+
+.cc-btn
+{
+    background-color: rgb(74, 43, 26);
+    border: 0;
+    font-size: 14px;
+    text-align: start;
+    color: rgb(171, 133, 122);
+    padding: 10px;
+    padding-left: 0;
+}
+
+.cc-header
+{
+    text-align: start;
+    font-weight: 600;
+    color: rgb(171, 133, 122);
+}
+
+.head
+{
+    font-size: 15px;
+    color: rgb(207, 207, 207);
+}
+
+.c-text {
+    color: rgb(255, 255, 255);
+    text-align: start;
+}
+
+.c-dur 
+{
+    font-size: 12px;
+    color: rgb(211, 211, 211);
+}

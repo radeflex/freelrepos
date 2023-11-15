@@ -1,0 +1,14 @@
+.courses
+{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.coursesPage
+{
+    display: flex;
+    justify-content: center;
+}

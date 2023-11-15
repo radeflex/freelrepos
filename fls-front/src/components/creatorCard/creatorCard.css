@@ -1,0 +1,57 @@
+.creator-card {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid rgb(210, 210, 210);
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.c-rank
+{
+    font-size: 17px;
+    color: rgb(94, 94, 94);
+}
+
+.creator-block
+{
+    display: flex;
+    padding: 40px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.c-img
+{
+    height: 200px;
+    width: 200px;
+    background-color: azure;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 0.5px solid whitesmoke;
+}
+
+.c-header {
+    text-align: start;
+    color: rgb(91, 50, 50);
+    font-weight: 600;
+}
+
+.c-text
+{
+    text-align: start;
+    color: rgb(118, 110, 110);
+    word-wrap: break-word;
+    height: 100%;
+}
+
+#year {
+    color: rgb(176, 91, 91);
+}
