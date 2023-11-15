@@ -40,6 +40,7 @@ export const Header = () => {
               <Nav className="me-auto">
                 <Nav.Link href="/works">Заказы</Nav.Link>
                 <Nav.Link href="/freelancers">Фрилансеры</Nav.Link>
+                <Nav.Link href="/courses">Курсы</Nav.Link>
                 {!isLogged ? (
                   <Nav>
                     <Nav.Link href="/login">Вход</Nav.Link>
@@ -57,13 +58,12 @@ export const Header = () => {
         </Navbar>
       ) : (
         <Navbar
-          bg="dark"
           data-bs-theme="primary"
-          style={{ marginBottom: "30px" }}
+          style={{ marginBottom: "30px", backgroundColor: "#FFFFFF" }}
         >
           <Container>
             <Navbar.Brand>
-              <Link to="/">SBF</Link>
+              <Link to="/">Blacc Freelance</Link>
             </Navbar.Brand>
             <Nav className="navbar-nav">
               <Nav.Link>
@@ -71,6 +71,9 @@ export const Header = () => {
               </Nav.Link>
               <Nav.Link>
                 <Link to="/freelancers">Фрилансеры</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/courses">Курсы</Link>
               </Nav.Link>
             </Nav>
 
@@ -93,7 +96,7 @@ export const Header = () => {
               <ButtonGroup>
                 <Button
                   onClick={() => navigate(`/${data._id}`)}
-                  variant="outline-primary"
+                  variant="outline-secondary"
                 >
                   Профиль
                 </Button>

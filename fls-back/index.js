@@ -3,7 +3,6 @@ import bcrypt from "bcrypt";
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import UserModel from "./models/UserModel.js";
-import multer from "multer";
 import {
   loginValidate,
   profileValidate,

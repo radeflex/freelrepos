@@ -9,6 +9,7 @@ import Works from "./pages/Works/Works";
 import Freelancers from "./pages/Freelancers/Freelancers";
 import EditProfile from "./components/editProfile/editProfile";
 import CreatePost from "./components/createPost/createPost";
+import Courses from "./pages/Courses/Courses";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/:id" element={<Profile />} />
         <Route path="/works" element={<Works />} />
         <Route path="/freelancers" element={<Freelancers />} />
+        <Route path="/courses" element={<Courses />} />
       </Routes>
     </div>
   );

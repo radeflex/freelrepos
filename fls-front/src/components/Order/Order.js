@@ -74,7 +74,7 @@ const Orders = () => {
       8: "августа",
       9: "сентября",
       10: "октября",
-      11: "нояабря",
+      11: "ноября",
       12: "декабря",
     };
     const data =
@@ -297,7 +297,7 @@ const Orders = () => {
     <div class="cards-list">
       {isLogged ? (
         <Button onClick={() => navigate("/new-work")} variant="success">
-          Создать запись..
+          Разместить заказ
         </Button>
       ) : (
         <Link to="/login" style={{ color: "blue" }}>
