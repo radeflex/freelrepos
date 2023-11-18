@@ -1,6 +1,6 @@
 .courseCard
 {
-    height: 100%;
+    max-height: 100%;
     width: 380px;
     background-color: rgb(74, 43, 26);
     border-radius: 25px;
@@ -27,7 +27,7 @@
     background: 0;
     border: 0;
     opacity: 0.9;
-    height: 60%;
+    height: 200px;
     width: 50%;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .c-text {
-    color: rgb(255, 255, 255);
+    color: rgb(197, 174, 151);
     text-align: start;
 }
 
