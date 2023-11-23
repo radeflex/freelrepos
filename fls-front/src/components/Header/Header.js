@@ -41,6 +41,7 @@ export const Header = () => {
                 <Nav.Link href="/works">Заказы</Nav.Link>
                 <Nav.Link href="/freelancers">Фрилансеры</Nav.Link>
                 <Nav.Link href="/courses">Курсы</Nav.Link>
+                <Nav.Link href="/about">О нас</Nav.Link>
                 {!isLogged ? (
                   <Nav>
                     <Nav.Link href="/login">Вход</Nav.Link>
@@ -74,6 +75,9 @@ export const Header = () => {
               </Nav.Link>
               <Nav.Link>
                 <Link to="/courses">Курсы</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/about">О нас</Link>
               </Nav.Link>
             </Nav>
 

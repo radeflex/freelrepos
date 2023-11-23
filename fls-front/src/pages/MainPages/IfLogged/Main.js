@@ -1,19 +1,20 @@
-import Creator from "../../../components/creatorCard/creatorCard";
-import fatty from "../../../media/img/fatty.jpeg"
 import "./Main.css"
+import {Button} from "react-bootstrap"
+import {useNavigate} from "react-router-dom"
+import folder from "../../../media/img/folder.webp"
 
 const Main = () => {
-  return (
-    <div class="Main">
-      <h1>О нас</h1>
-      <div className="creatorPage">
-      <Creator photo={fatty} rank="Фрилансер" name="Мразота с колледжа" age={20} bio="Люблю ебать Максиму и Никите мозги с сайтом."/>
-      <Creator photo={fatty} rank="Фрилансер" name="Мразота с колледжа" age={20} bio="Люблю ебать Максиму и Никите мозги с сайтом."/>
-      <Creator photo={fatty} rank="Фрилансер" name="Мразота с колледжа" age={20} bio="Люблю ебать Максиму и Никите мозги с сайтом."/>
-      <Creator photo={fatty} rank="Пидор" name="Мразота с колледжа" age={20} bio="Люблю ебать Максиму и Никите мозги с сайтом."/>
-        </div>
+  const navigate = useNavigate();
+  return <div className="mainPage">
+    <div className="main-banner">
+      <div class="b-content"> 
+        <h2 class="m-slog">Занимайтесь тем, чем нравится.</h2>
+        <h5 class="m-text">Начните свой путь фрилансера с опытными преподавателями прямо сейчас!</h5>
+        <Button variant="outline-primary" onClick={() => navigate("/courses")} style={{height: "15%", borderRadius: "50px", fontSize: "25px", fontWeight: 600, color: "white"}}>Перейти к курсам</Button>
+      </div>
+      <img className="m-folder" src={folder} alt="folder" />
     </div>
-  );
-};
+  </div>
+}
 
 export default Main;

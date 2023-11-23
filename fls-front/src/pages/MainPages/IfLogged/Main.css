@@ -1,15 +1,53 @@
-.creatorPage
+.main-banner
 {
+    height: 80%;
+    min-height: 40em;
+    width: 80%;
+    background-color: #7373fe;
+    border-radius: 15px;
+    margin: 30px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 95%;
+    align-items: flex-start;
+    text-align: start;
 }
 
-.Main {
+.mainPage
+{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.m-slog
+{
+    font-weight: 600;
+    width: 50%;
+    font-size: 50px;
+    text-align: start;
+}
+
+.b-content
+{
+    color: white;
+    height: 40em;
+    width: 60%;
+    padding: 50px;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.m-text
+{
+    word-wrap: break-word;
+    text-align: start;
+    width: 100%;
+    font-size: 20px;
+}
+
+.m-folder
+{
+    height: 40%;
+    width: 40%;
+    opacity: 0.9;
 }

@@ -3,21 +3,23 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Header from "./components/Header/Header";
-import Main from "./pages/Main";
+import About from "./pages/About/About";
 import Profile from "./pages/Profile/Profile";
 import Works from "./pages/Works/Works";
 import Freelancers from "./pages/Freelancers/Freelancers";
 import EditProfile from "./components/editProfile/editProfile";
 import CreatePost from "./components/createPost/createPost";
 import Courses from "./pages/Courses/Courses";
+import Main from "./pages/MainPages/IfLogged/Main";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/new-work" element={<CreatePost />} />
         <Route path="/" element={<Main />} />
+        <Route path="/new-work" element={<CreatePost />} />
+        <Route path="/about" element={<About />} />
         <Route path="/edit/:id" element={<EditProfile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

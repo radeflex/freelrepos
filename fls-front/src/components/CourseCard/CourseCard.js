@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./CourseCard.css";
 import { Button, Accordion, Card, useAccordionButton } from "react-bootstrap";
 
@@ -10,7 +9,7 @@ const CourseCard = ({ head, header, text, dur, img, type }) => {
   
     return (
       <span
-        style={{ color: "#e8e6e6", cursor: "pointer" }}
+      style={type !== "primary" ?{ color: "#e8e6e6", fontWeight: 600, cursor: "pointer" } : {cursor: "pointer", fontWeight: 600}}
         onClick={decoratedOnClick}
       >
         {children}
@@ -20,19 +19,19 @@ const CourseCard = ({ head, header, text, dur, img, type }) => {
   return (
     <div className="courseCard" style={type === "primary" ? { backgroundColor: "#88b9db"} : type === "main" ? {backgroundColor: "#d45055"} : {}}>
       <div class="c-body">
-        <span class="head" style={type === "primary" ? { backgroundColor: "#88b9db", color: "#515659"} : type === "main" ? {color: "#cfcfcf"} : {}}>{head}</span>
-        <h3 class="cc-header" style={type === "primary" ? {color: "#313436"} : type === "main" ? {color: "#cfcfcf"} : {}}>{header}</h3>
-        <Accordion defaultActiveKey="0">
+        <span class="head" style={type === "primary" ? { backgroundColor: "#88b9db", color: "#515659"} : type === "main" ? {color: "#e8e6e6"} : {}}>{head}</span>
+        <h3 class="cc-header" style={type === "primary" ? {color: "#313436"} : type === "main" ? {color: "#e8e6e6"} : {}}>{header}</h3>
+        <Accordion>
       <Card style={{border: 0}}>
-        <Card.Header style={type === "primary" ? {padding: 0, border: 0, backgroundColor: "#88b9db"} : type === "main" ? {padding: 0, border: 0, backgroundColor: "#d45055"} : {padding: 0, border: 0, backgroundColor: "rgb(74, 43, 26)" }}>
+        <Card.Header style={type === "primary" ? {padding: 0, border: 0, backgroundColor: "#88b9db"} : type === "main" ? {padding: 0, border: 0, backgroundColor: "#d45055"} : {padding: 0, border: 0, backgroundColor: "rgb(74, 43, 26)"}}>
           <CustomToggle eventKey="0">{"Подробнее >>"}</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
-          <Card.Body style={type === "primary" ? {padding: 0, border: 0, backgroundColor: "#88b9db"} : type === "main" ? {padding: 0, border: 0, backgroundColor: "#d45055"} : {padding: 0, border: 0, backgroundColor: "rgb(74, 43, 26)", color: "#cfcfcf"}}>{text}</Card.Body>
+          <Card.Body style={type === "primary" ? {padding: 0, border: 0, backgroundColor: "#88b9db", fontSize: "13px"} : type === "main" ? {padding: 0, border: 0, backgroundColor: "#d45055", fontSize: "13px", color: "#e8e6e6"} : {padding: 0, border: 0, backgroundColor: "rgb(74, 43, 26)", color: "#e8e6e6", fontSize: "13px"}}>{text}</Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>
-        <span className="c-dur" style={type === "primary" ? { color: "#515659"} : type === "main" ? { color: "#cfcfcf"} : {}}>{dur}</span>
+        <span className="c-dur" style={type === "primary" ? { color: "#515659"} : type === "main" ? { color: "#e8e6e6"} : {}}>{dur}</span>
         <br />
         <Button className="c-btn">Контакты</Button>
       </div>
