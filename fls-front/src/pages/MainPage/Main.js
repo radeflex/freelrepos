@@ -1,7 +1,7 @@
 import "./Main.css"
 import {Button} from "react-bootstrap"
 import {useNavigate} from "react-router-dom"
-import folder from "../../../media/img/folder.webp"
+import folder from "../../media/img/folder.webp"
 
 const Main = () => {
   const navigate = useNavigate();

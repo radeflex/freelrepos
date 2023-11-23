@@ -10,7 +10,7 @@ import Freelancers from "./pages/Freelancers/Freelancers";
 import EditProfile from "./components/editProfile/editProfile";
 import CreatePost from "./components/createPost/createPost";
 import Courses from "./pages/Courses/Courses";
-import Main from "./pages/MainPages/IfLogged/Main";
+import Main from "./pages/MainPage/Main";
 
 function App() {
   return (
