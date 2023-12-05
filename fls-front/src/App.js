@@ -11,6 +11,7 @@ import EditProfile from "./components/editProfile/editProfile";
 import CreatePost from "./components/createPost/createPost";
 import Courses from "./pages/Courses/Courses";
 import Main from "./pages/MainPage/Main";
+import AboutPl from "./pages/About/AboutPlatf";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/new-work" element={<CreatePost />} />
         <Route path="/about" element={<About />} />
+        <Route path="/aboutplatform" element={<AboutPl />} />
         <Route path="/edit/:id" element={<EditProfile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

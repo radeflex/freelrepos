@@ -27,7 +27,7 @@ const CourseCard = ({ head, header, text, dur, img, type }) => {
           <CustomToggle eventKey="0">{"Подробнее >>"}</CustomToggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
-          <Card.Body style={type === "primary" ? {padding: 0, border: 0, backgroundColor: "#88b9db", fontSize: "13px"} : type === "main" ? {padding: 0, border: 0, backgroundColor: "#d45055", fontSize: "13px", color: "#e8e6e6"} : {padding: 0, border: 0, backgroundColor: "rgb(74, 43, 26)", color: "#e8e6e6", fontSize: "13px"}}>{text}</Card.Body>
+          <Card.Body style={type === "primary" ? {padding: 0, border: 0, backgroundColor: "#ffffff", borderRadius: "10px", fontSize: "13px"} : type === "main" ? {padding: 0, border: 0, backgroundColor: "#ffffff", borderRadius: "10px", fontSize: "13px"} : {padding: 0, border: 0, backgroundColor: "#ffffff", borderRadius: "10px", fontSize: "13px"}}>{text}</Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>

@@ -38,10 +38,11 @@ export const Header = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="/works">Заказы</Nav.Link>
+                {/* <Nav.Link href="/works">Заказы</Nav.Link> */}
                 <Nav.Link href="/freelancers">Фрилансеры</Nav.Link>
                 <Nav.Link href="/courses">Курсы</Nav.Link>
                 <Nav.Link href="/about">О нас</Nav.Link>
+                <Nav.Link href="/aboutplatform">О платформе</Nav.Link>
                 {!isLogged ? (
                   <Nav>
                     <Nav.Link href="/login">Вход</Nav.Link>
@@ -67,9 +68,9 @@ export const Header = () => {
               <Link to="/">Blacc Freelance</Link>
             </Navbar.Brand>
             <Nav className="navbar-nav">
-              <Nav.Link>
+              {/* <Nav.Link>
                 <Link to="/works">Заказы</Link>
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link>
                 <Link to="/freelancers">Фрилансеры</Link>
               </Nav.Link>
@@ -78,6 +79,9 @@ export const Header = () => {
               </Nav.Link>
               <Nav.Link>
                 <Link to="/about">О нас</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/aboutplatform">О платформе</Link>
               </Nav.Link>
             </Nav>
 

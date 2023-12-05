@@ -2,18 +2,23 @@
     height: 100%;
     width: 100%;
     margin-top: 20px;
-    border: 1px solid rgb(210, 210, 210);
+    border: 1.3px solid rgb(181, 223, 225);;
     display: flex;
     flex-wrap: nowrap;
     padding: 40px;
     border-radius: 10px;
     margin-bottom: 20px;
+    transition: background 0.4s;
+}
+
+.creator-card:hover {
+    background-color: rgb(181, 223, 225);
 }
 
 .c-rank
 {
     font-size: 17px;
-    color: rgb(94, 94, 94);
+    color: rgba(65, 65, 65, 0.746);
 }
 
 .creator-block
@@ -35,23 +40,22 @@
     background-color: azure;
     margin-bottom: 20px;
     border-radius: 15px;
-    border: 0.5px solid whitesmoke;
 }
 
 .c-header {
     text-align: start;
-    color: rgb(91, 50, 50);
+    color: rgb(79, 85, 170);
     font-weight: 600;
 }
 
-.c-text
+.cr-text
 {
     text-align: start;
-    color: rgb(118, 110, 110);
+    color: rgb(63, 60, 60);
     word-wrap: break-word;
     height: 100%;
 }
 
 #year {
-    color: rgb(176, 91, 91);
+    color: rgb(77, 144, 65);
 }

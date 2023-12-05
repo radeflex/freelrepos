@@ -7,7 +7,7 @@ const Creator = ({photo, name, age, bio, rank}) => {
     <h5 className="c-rank">{rank}</h5>
     <h3 className="c-header">{name}</h3>
     <h5 className="c-header" id="year">{age ? age + " лет" : ""} </h5>
-    <p className="c-text">{bio}</p>
+    <p className="cr-text">{bio}</p>
   </div>
 </div>
 };

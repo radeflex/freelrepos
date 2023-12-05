@@ -1,0 +1,16 @@
+.pl-text
+{
+    max-width: 90%;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    word-wrap: break-word;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-right: 15%;
+}
+
+.pl-text
+{
+    color: rgb(65, 49, 39);
+}
