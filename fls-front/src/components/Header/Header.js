@@ -72,7 +72,7 @@ export const Header = () => {
                 <Link to="/works">Заказы</Link>
               </Nav.Link> */}
               <Nav.Link>
-                <Link to="/freelancers">Фрилансеры</Link>
+                <Link to="/freelancers">Лучшие ученики</Link>
               </Nav.Link>
               <Nav.Link>
                 <Link to="/courses">Курсы</Link>
