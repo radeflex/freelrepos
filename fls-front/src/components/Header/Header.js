@@ -39,7 +39,7 @@ export const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 {/* <Nav.Link href="/works">Заказы</Nav.Link> */}
-                <Nav.Link href="/freelancers">Фрилансеры</Nav.Link>
+                <Nav.Link href="/freelancers">Ученики</Nav.Link>
                 <Nav.Link href="/courses">Курсы</Nav.Link>
                 <Nav.Link href="/about">О нас</Nav.Link>
                 <Nav.Link href="/aboutplatform">О платформе</Nav.Link>
