@@ -34,7 +34,7 @@ export const Header = () => {
           style={{ marginBottom: "30px" }}
         >
           <Container>
-            <Navbar.Brand href="/">SBF</Navbar.Brand>
+            <Navbar.Brand href="/">BBase</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
@@ -65,7 +65,7 @@ export const Header = () => {
         >
           <Container>
             <Navbar.Brand>
-              <Link to="/">Blacc Freelance</Link>
+              <Link to="/">BriefBase</Link>
             </Navbar.Brand>
             <Nav className="navbar-nav">
               {/* <Nav.Link>
